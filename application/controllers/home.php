@@ -13,6 +13,8 @@ class Home extends CI_Controller {
         
         $this->load->view('header');
         
+        $this->load->library('booking');
+        $this->booking->test();
         $this->load->view('home/index');
         
         $this->load->view('footer');
